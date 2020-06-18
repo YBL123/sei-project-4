@@ -49,7 +49,7 @@ export const deleteReview = async ( medium, reviewId ) => {
 //! Register
 
 export const registerUser = async data => {
-  const result = axios.post(`${baseUrl}/register/`, data)
+  const result = axios.post(`${baseUrl}/register`, data)
   return result
 }
 
