@@ -10,11 +10,11 @@ const withHeaders = () => {
 //! MEDIUMS
 
 export const getAllMediums = () => {
-  return axios.get(`${baseUrl}/mediums`)
+  return axios.get(`${baseUrl}/mediums/`)
 }
 
 export const getSingleMedium = async id => {
-  const result = await axios.get(`${baseUrl}/mediums/${id}`)
+  const result = await axios.get(`${baseUrl}/mediums/${id}/`)
   return result
 }
 
@@ -23,13 +23,13 @@ export const getSingleMedium = async id => {
 //! POSTS
 
 export const getAllPosts = async () => {
-  const result = await axios.get(`${baseUrl}/posts`)
+  const result = await axios.get(`${baseUrl}/posts/`)
   return result
   
 }
 
 export const getSinglePost = async id => {
-  const result = axios.get(`${baseUrl}/posts/${id}`)
+  const result = axios.get(`${baseUrl}/posts/${id}/`)
   return result
 }
 
@@ -49,7 +49,7 @@ export const deleteReview = async ( medium, reviewId ) => {
 //! Register
 
 export const registerUser = async data => {
-  const result = axios.post(`${baseUrl}/register`, data)
+  const result = axios.post(`${baseUrl}/register/`, data)
   return result
 }
 
@@ -78,7 +78,7 @@ export const addFavourite = async (mediumId) => {
 //! DELETE FAVOURITE
 
 export const deleteFavourite = async (favouriteId) => {
-  const res = await axios.delete(`${baseUrl}/favourites/${favouriteId}`, withHeaders())
+  const res = await axios.delete(`${baseUrl}/favourites/${favouriteId}/`, withHeaders())
   return res 
 
 }

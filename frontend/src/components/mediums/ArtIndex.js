@@ -86,7 +86,7 @@ function ArtIndex() {
                       <h1 className='index-page-h1'>{medium.creator}</h1>
                     </div>
                     <div className="medium-img">
-                      <Link to={`/mediums/${medium.id}`}>
+                      <Link to={`/mediums/${medium.id}/`}>
                         <img className='medium-art-index' src={medium.image} alt={medium.title} />
                       </Link>
                     </div>
@@ -109,7 +109,7 @@ function ArtIndex() {
                     <h1 className='index-page-h1'>{medium.creator}</h1>
                   </div>
                   <div className="medium-img">
-                    <Link to={`/mediums/${medium.id}`}>
+                    <Link to={`/mediums/${medium.id}/`}>
                       <img className='medium-art-index' src={medium.image} alt={medium.title} />
                     </Link>
                     {/* <video src={medium.video} /> */}

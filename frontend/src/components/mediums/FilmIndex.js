@@ -85,7 +85,7 @@ function FilmIndex() {
                       <h1 className='index-page-h1-duration'>{medium.duration}</h1>
                     </div>
                     <div className="medium-img">  
-                      <Link to={`/mediums/${medium.id}`}>
+                      <Link to={`/mediums/${medium.id}/`}>
                         <img className='medium-image-index' src={medium.image} alt={medium.title} />
                       </Link>
                     </div>
@@ -107,7 +107,7 @@ function FilmIndex() {
                     <h1 className='index-page-h1-duration'>{medium.duration}</h1>
                   </div>
                   <div className="medium-img">
-                    <Link to={`/mediums/${medium.id}`}>
+                    <Link to={`/mediums/${medium.id}/`}>
                       <img className='medium-image-index'src={medium.image} alt={medium.title} />
                     </Link>
                     {/* <video src={medium.video} /> */}

@@ -22,7 +22,9 @@ function MediumShow() {
   const [isFavourite, setIsFavourite] = useState(null) //! changed from false to empty object becasue that's what you are getting returned. Then changed it to null, so if there is an object inside there it will be true
 	
   useEffect(() => {
-    if (!(medium && user)) return
+    if (!medium ) return
+    if (!user ) return
+
     const getGenreOfMedium = medium.genres.map((item) => item) //* if medium is loaded -> continue to medium.genres.map -> if it's not this return null
     const listOfFavourites = user.favourites.map((item) => item) || [] //* adding an 'or' here means that if the user has no favourites listOfFavourites will be an empty array rather than undefined so it shouldnt error
     const mediumId = medium.id //* you can remove this if you want and just use medium.id in the find function but totally up to you
