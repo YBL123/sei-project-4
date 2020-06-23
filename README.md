@@ -158,4 +158,4 @@ I will give an overview of the app’s architecture and delve into more detail o
 * More filter options and being able to filter in favourites/profile page too. Being able to filter by year, month.
 * Calendar feature for the art exhibitions - so that a user can add exhibitions to their personal calendar that they can check on and get alerts.
 * Have actual media, i.e film and songs for those two components. Netflix, Spotify merge.
-* 
+
