@@ -21,7 +21,7 @@ I loved collaborating in a team on my previous project and so I chose to work in
 * [Eleanor Byass](https://github.com/ebyass)
 
 ## Deployment
-The website is deployed on Heroku and can be found [here](http://plntify-app.herokuapp.com/)
+The website is deployed on Heroku and can be found [here](https://the-fam.herokuapp.com/)
 
 (After one hour of inactivity Heroku puts the dyno to sleep. The first request may be be wakening it up again and so the first request the router sends will have some delay).
 
