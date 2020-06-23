@@ -148,15 +148,16 @@ I will give an overview of the app’s architecture and delve into more detail o
 
 // show - actually ended up only using one "medium" component for all 3 unlike the wireframe.
 
----> favourites
---> brief description
----> screenshot
-
 ---> register
 --> screenshot
 
 login
 --> screenshot
+
+---> favourites
+--> brief description
+---> screenshot
+
 
 ratings --> plug-in
 reviews --->  
