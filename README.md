@@ -139,7 +139,7 @@ You are free to work alone or in a group. Both ways have their pros and cons. Re
 I will give an overview of the app’s architecture and delve into more detail on some of the features I built
 
 // Home - latest posts (built together)
-![fam home](fam-home.png )
+![fam home](fam-home.png =200x )
 ---> insert screenshot
 ---> insert code snippet
 
