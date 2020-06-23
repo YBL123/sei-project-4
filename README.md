@@ -75,10 +75,30 @@ pipenv install psycopg2-binary
 ```
 
 ```terminal
-createdb codenewbies  
+createdb fam  
 ```
 
 * Migrate everything from the backend
+```terminal
+python manage.py migrate  
+```
+
+* To seed your database run the following command, in the following order:
+```terminal
+python manage.py loaddata jwt_users/seeds.json
+```
+```terminal
+python manage.py loaddata genres/seeds.json
+```
+```terminal
+python manage.py loaddata categories/seeds.json
+```
+```terminal
+python manage.py loaddata mediums/seeds.json
+```
+```terminal
+python manage.py loaddata posts/seeds.json
+```
 
 ## Brief
 **Solo or Group?**
