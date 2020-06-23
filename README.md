@@ -129,6 +129,7 @@ You are free to work alone or in a group. Both ways have their pros and cons. Re
 // reviews + rating as an example + how teh user was populated to make sure the username could be accessed for reviews
 
 // insert screenshot of all insomnia requests
+![insomnia](insomnia.png )
 
 ### Wireframe
 
