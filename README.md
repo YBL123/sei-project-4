@@ -148,12 +148,18 @@ The home page displays the latest post. The latest post in this case is for the 
 ---> insert screenshot
 ---> insert code snippet
 
-### Index - film, music, art
+### Index 
+
+- film, music, art
+
 ![fam index](fam-index.png )
 ---> insert screenshot
 ----> insert code snippet?
 
-### Show - actually ended up only using one "medium" 
+### Show 
+
+- actually ended up only using one "medium" 
+
 ![fam show](fam-show.png )
 //component for all 3 unlike the wireframe.
 
