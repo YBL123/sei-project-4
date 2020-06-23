@@ -61,7 +61,7 @@ pip install pipenv
 ```
 
 ```terminal
-pipenv install django==2.2.9
+pipenv install django
 ```
 
 ```terminal
