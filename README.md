@@ -126,7 +126,9 @@ You are free to work alone or in a group. Both ways have their pros and cons. Re
 
 //  inset code snippets
 
-// include examples of models
+// reviews + rating as an example + how teh user was populated to make sure the username could be accessed for reviews
+
+// insert screenshot of all insomnia requests
 
 ### Wireframe
 
