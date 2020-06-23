@@ -115,7 +115,7 @@ You are free to work alone or in a group. Both ways have their pros and cons. Re
 
 ## Website Architecture
 
- ERD Model
+### ERD Model
 
 ![erd model](erd.png )
 //  insert image of model
