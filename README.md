@@ -23,11 +23,11 @@ The website is deployed on Heroku and can be found [here](http://plntify-app.her
 (After one hour of inactivity Heroku puts the dyno to sleep. The first request may be be wakening it up again and so the first request the router sends will have some delay).
 
 ## Built With
-* React
-* React hooks
 * Python
 * Django
 * PostgreSQL
+* React
+* React Hooks
 * Insomnia
 * Axios
 * Sass
