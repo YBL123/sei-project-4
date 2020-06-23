@@ -59,21 +59,21 @@ To install all the packages in the root directory:
 ```terminal
 pip install pipenv
 ```
-* 
+
 ```terminal
 pipenv install django==2.2.9
 ```
-* 
+
 ```terminal
 pipenv shell
 ```
 
 * Create the postgreSQL database: 
-* 
+
 ```terminal
 pipenv install psycopg2-binary  
 ```
-* 
+
 ```terminal
 createdb codenewbies  
 ```
