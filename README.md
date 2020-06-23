@@ -134,10 +134,30 @@ You are free to work alone or in a group. Both ways have their pros and cons. Re
 
 ![fam wireframe](readme-wireframe.png )
 
-
 // talk about the main components 
 
 I will give an overview of the app’s architecture and delve into more detail on some of the features I built
+
+// Home - latest posts (built together)
+---> insert screenshot
+---> insert code snippet
+
+// index - film, music, art
+---> insert screenshot
+----> insert code snippet?
+
+// show - actually ended up only using one "medium" component for all 3 unlike the wireframe.
+
+---> favourites
+--> brief description
+---> screenshot
+
+---> register
+--> screenshot
+
+login
+--> screenshot
+
 
 
 
