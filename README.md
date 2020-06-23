@@ -56,8 +56,7 @@ yarn start
 
 To install all the packages in the root directory: 
 * Install Django and a shell in the root directory: 
-* 
-```terminal
+* ```terminal
 pip install pipenv
 ```
 * 
