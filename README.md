@@ -148,33 +148,33 @@ The home page displays the latest post. The latest post in this case is for the 
 ---> insert screenshot
 ---> insert code snippet
 
-// index - film, music, art
+### Index - film, music, art
 ![fam index](fam-index.png )
 ---> insert screenshot
 ----> insert code snippet?
 
-// show - actually ended up only using one "medium" 
+### Show - actually ended up only using one "medium" 
 ![fam show](fam-show.png )
 //component for all 3 unlike the wireframe.
 
----> register
+### Register
 ![fam register](fam-register.png )
 --> screenshot
 
-login
+### Login
 ![fam login](fam-login.png )
 --> screenshot
 
----> favourites
+### Favourites
 ![fam favourites](fam-favourites.png )
 --> brief description
 ---> screenshot
 
-ratings --> plug-in
-reviews --->  
+### Reviews --->  
 only a user that is logged in can post reviews. tHEY MUST ADD A RATING TO POST THE REVIEW. A red message will appear informing the user of so if they try to post a review without a rating. 
 Anyone can view the reviews even if not logged in. But they can not make a post. 
 Wrapped in authentication ternary in render.
+### Ratings --> plug-in
 
 
 
