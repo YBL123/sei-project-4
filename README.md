@@ -1,4 +1,4 @@
-<img align=“left” /width/=“50” /height/=“50” /src/=“GA.png” /alt/=“GA logo”>
+<img align="left" width="50" height="50" src="GA.png" alt="GA logo">
 
 # Project 4: FAM
 ![fam title](readme-fam.png )
