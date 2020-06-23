@@ -127,7 +127,7 @@ You are free to work alone or in a group. Both ways have their pros and cons. Re
 
 ### Wireframe
 
-![fam wireframe](readme-plntify-wireframe.png
+![fam wireframe](readme-wireframe.png )
 
 
 // talk about the main components 
