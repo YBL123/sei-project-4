@@ -158,6 +158,11 @@ I will give an overview of the app’s architecture and delve into more detail o
 login
 --> screenshot
 
+ratings --> plug-in
+reviews --->  
+only a user that is logged in can post reviews. tHEY MUST ADD A RATING TO POST THE REVIEW. A red message will appear informing the user of so if they try to post a review without a rating. 
+Anyone can view the reviews even if not logged in. But they can not make a post. 
+Wrapped in authentication ternary in render.
 
 
 
