@@ -193,7 +193,7 @@ As seen below, the link is wrapped around each category image. Once clicked the 
 
 - film, music, art
 
-![fam index](fam-index.png )
+![fam index](fam-index.png)
 ---> insert screenshot
 ----> insert code snippet?
 
