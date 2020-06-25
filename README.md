@@ -197,6 +197,14 @@ As seen below, the link is wrapped around each category image. Once clicked the 
 
 The index pages can be accesed from the home page as mentioned above or via the navbar. Here the user can see the list of favourites for the month in their chosen cateogry. The user is also able to filter by month should they want to see previous posts. (We have the months of May and June for demo purposes).
 
+Each image in the index is wrapped with a link 
+
+```javascript
+      <Link to={`/mediums/${medium.id}/`}>
+        <img className='medium-image-index'src={medium.image} alt={medium.title} />
+      </Link>
+```
+
 ### Show 
 
 - actually ended up only using one "medium" 
