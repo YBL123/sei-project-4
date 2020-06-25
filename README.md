@@ -214,7 +214,7 @@ Each image in the index is wrapped with a link
 // add screenshots and code snippets
 
 ### Reviews --->  
-only a user that is logged in can post reviews. tHEY MUST ADD A RATING TO POST THE REVIEW. A red message will appear informing the user of so if they try to post a review without a rating. 
+only a user that is logged in can post reviews. They must add a rating to post a review. A red message will appear informing the user of so if they try to post a review without a rating. 
 Anyone can view the reviews even if not logged in. But they can not make a post. 
 Wrapped in authentication ternary in render.
 ### Ratings --> plug-in
