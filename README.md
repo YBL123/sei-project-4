@@ -225,11 +225,11 @@ Wrapped in authentication ternary in render.
 
 ### Register
 ![fam register](fam-register.png )
---> user can be directed to sign in if they already have an account
+Users can be redirected to sign in if they already have an account.
 
 ### Login
 ![fam login](fam-login.png )
---> user can be directed to register if they don't already have an account
+Users can be redirected to register if they don't already have an account.
 
 ### Favourites
 ![fam favourites](fam-favourites.png )
