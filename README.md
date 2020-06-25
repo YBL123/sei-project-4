@@ -142,8 +142,6 @@ I will give an overview of the app’s architecture and delve into more detail o
 
 ### Home 
 
-- latest posts (built together)
-
 The home page displays the latest post. The latest post in this case is for the month of June. We chose to split the post into our three categories; film, art and music. These three categories are each represented by an image uploaded to the post model. These images will be updated the next time a post is made. When a user clicks on one of these three images they will taken to the correlating index page.
 
 In order to always display the latest post in the home page we built the following function together:
