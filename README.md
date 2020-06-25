@@ -217,11 +217,11 @@ Each image in the index is wrapped with a link
 
 ### Register
 ![fam register](fam-register.png )
---> screenshot
+--> user can be directed to sign in if they already have an account
 
 ### Login
 ![fam login](fam-login.png )
---> screenshot
+--> user can be directed to register if they don't already have an account
 
 ### Favourites
 ![fam favourites](fam-favourites.png )
