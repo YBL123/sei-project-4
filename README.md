@@ -204,6 +204,9 @@ As seen below, the link is wrapped around each category image. Once clicked the 
 ![fam show](fam-show.png )
 //component for all 3 unlike the wireframe.
 
+// talk about reviews and ratings here
+// add screenshots and code snippets
+
 ### Register
 ![fam register](fam-register.png )
 --> screenshot
