@@ -209,6 +209,7 @@ Each image in the index is wrapped with a link
 
 - actually ended up only using one "medium" 
 //component for all 3 unlike the wireframe.
+// can be seen by all but can only interact if logged in
 
 // talk about reviews and ratings here
 // add screenshots and code snippets
@@ -229,6 +230,7 @@ Wrapped in authentication ternary in render.
 
 ### Favourites
 ![fam favourites](fam-favourites.png )
+can be seen only after a user registers and logs in.
 --> brief description
 ---> screenshot
 
