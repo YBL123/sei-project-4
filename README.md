@@ -191,7 +191,7 @@ As seen below, the link is wrapped around each category image. Once clicked the 
 
 ### Index 
 
-- film, music, art
+- Film, Music, Art
 
 ![fam index](fam-index.png)
 
