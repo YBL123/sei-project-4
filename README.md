@@ -145,6 +145,25 @@ I will give an overview of the app’s architecture and delve into more detail o
 - latest posts (built together)
 
 The home page displays the latest post. The latest post in this case is for the month of June. We chose to split the post into our three categories; film, art and music. These three categories are each represented by an image uploaded to the post model. These images will be updated the next time a post is made. When a user clicks on one of these three images they will taken to the correlating index page.
+
+In order to always display the latest post in the home page we built the following function together:
+
+```javascript
+function Home() {
+
+  //* data in this context is what is being returned from useFetch. What we are doing here is renaming data: with post. So we don't need to use this.state. Everything is on post.
+  const { data: post, error } = useFetch(getAllPosts)
+  const [ recentPost, setRecentPost ] = useState('') //* setting state here.
+
+  useEffect(() => {
+    const max = post ? post.length - 1 : null //* making the result ternary. Doing it here rather than the render, using the varaible to specify. Only creates variable max with post length if post exists. (-1 becaue length is not the same as the index number)
+
+    const recentPost = max ? post[max] : null
+
+    setRecentPost(recentPost) //* sets post with index that has the greatest value to state -> it can be resued using recentPost
+
+  },[post]) //* every time post changes. It will trigger this function to run
+  ```
 ![fam home](fam-home.png )
 ---> insert screenshot
 ---> insert code snippet
