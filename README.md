@@ -207,9 +207,9 @@ Each image in the index is wrapped with a link
 
 ### Show 
 
-- actually ended up only using one "medium" 
-
 ![fam show](fam-show.png )
+
+- actually ended up only using one "medium" 
 //component for all 3 unlike the wireframe.
 
 // talk about reviews and ratings here
