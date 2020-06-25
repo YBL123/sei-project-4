@@ -135,9 +135,10 @@ You are free to work alone or in a group. Both ways have their pros and cons. Re
 
 ![fam wireframe](readme-wireframe.png )
 
-// talk about the main components 
+As well as the ERD model, we created a wireframe to plan out the architecture of the app. We both feel as though this is a super useful step in the planning stage. It helps to visualize the upcoming project and although we gave ourselves room for change, it was a great point of reference.
+We added a list of "must have" and "nice to have". We then assigned a deadline for ourselves for when the list of "must have" had to be completed and when we wanted to be MVP ready. If we had extra time left we would look at the "nice to have" list.
 
-I will give an overview of the app’s architecture and delve into more detail on some of the features I built
+I will give an overview of the app’s architecture and delve into more detail on some of the features I built.
 
 ### Home 
 
