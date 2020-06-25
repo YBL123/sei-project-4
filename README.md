@@ -215,6 +215,12 @@ Each image in the index is wrapped with a link
 // talk about reviews and ratings here
 // add screenshots and code snippets
 
+### Reviews --->  
+only a user that is logged in can post reviews. tHEY MUST ADD A RATING TO POST THE REVIEW. A red message will appear informing the user of so if they try to post a review without a rating. 
+Anyone can view the reviews even if not logged in. But they can not make a post. 
+Wrapped in authentication ternary in render.
+### Ratings --> plug-in
+
 ### Register
 ![fam register](fam-register.png )
 --> user can be directed to sign in if they already have an account
@@ -227,13 +233,6 @@ Each image in the index is wrapped with a link
 ![fam favourites](fam-favourites.png )
 --> brief description
 ---> screenshot
-
-### Reviews --->  
-only a user that is logged in can post reviews. tHEY MUST ADD A RATING TO POST THE REVIEW. A red message will appear informing the user of so if they try to post a review without a rating. 
-Anyone can view the reviews even if not logged in. But they can not make a post. 
-Wrapped in authentication ternary in render.
-### Ratings --> plug-in
-
 
 
 
