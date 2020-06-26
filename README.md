@@ -302,8 +302,8 @@ can be seen only after a user registers and logs in.
 * Working with a lot of nested data on our models
  
 ## Wins
-* The greatest win for this project was how well we worked together as a team.
-
+* The greatest win for this project was how well we worked together as a team
+* meeting all of our deadlines and completing all of our 'must haves'
 * Working with Hooks
 * Working with python
 * Making the app responsive in it’s design
