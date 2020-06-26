@@ -48,7 +48,7 @@ class Reviews extends React.Component {
       } catch (error) {
         console.log(error)
       }
-      this.hasUserPostedReview() //* comment out
+      this.hasUserPostedReview() 
     }
 
     //! HAS THE USER ALREADY POSTED A REVIEW
