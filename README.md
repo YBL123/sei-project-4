@@ -232,19 +232,6 @@ In contrast to our wireframe I found that it was only really necessary for us to
 ```
 
 ### Reviews  
-![fam show review](show-reviews.png )
-Only a user that is logged in can post reviews. They must add a rating to post a review. A red message will appear informing the user of so if they try to post a review without a rating. 
-Anyone can view the reviews even if not logged in. But they can not make a post. 
-Wrapped in authentication ternary in render.
-
-![fam show review no rating no post allowed](show-review-no-rating.png )
-
-### Ratings
-
-For the ratings I used the following plug-in: 
-```javascript
-   "react-ratings-declarative": "^3.4.1"
-```
 
 // reviews + rating as an example + how the user was populated to make sure the username could be accessed for reviews
 
@@ -265,6 +252,20 @@ in reviews model serializers.py
 ```python
 class PopulatedReviewSerializer(ReviewSerializer):
     owner = UserSerializer()
+```
+
+![fam show review](show-reviews.png )
+Only a user that is logged in can post reviews. They must add a rating to post a review. A red message will appear informing the user of so if they try to post a review without a rating. 
+Anyone can view the reviews even if not logged in. But they can not make a post. 
+Wrapped in authentication ternary in render.
+
+![fam show review no rating no post allowed](show-review-no-rating.png )
+
+### Ratings
+
+For the ratings I used the following plug-in: 
+```javascript
+   "react-ratings-declarative": "^3.4.1"
 ```
 
 ### Register
