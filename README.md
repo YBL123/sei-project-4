@@ -275,9 +275,10 @@ class PopulatedMediumSerializer(MediumSerializer): #* Read serializer, used when
 ```
 
 ![fam show review](show-reviews.png )
+I made the reviews an independent component so that it could be reused should we want to option to leave reviews anywhere else on the app.
+
 Only a user that is logged in can post reviews. They must add a rating to post a review. A red message will appear informing the user of so if they try to post a review without a rating. 
-Anyone can view the reviews even if not logged in. But they can not make a post. 
-Wrapped in authentication ternary in render.
+The reviews are wrapped in a ternary. Anyone can view the reviews even if not logged in. But they can not make a post - and the option to do so will not appear unless a user is logged in. 
 
 ```javascript
 {isAuthenticated() && (
