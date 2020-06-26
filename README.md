@@ -439,11 +439,8 @@ Users can be redirected to register if they don't already have an account.
 
 ### Favourites
 ![fam favourites](fam-favourites.png )
-can be seen only after a user registers and logs in.
---> brief description
----> screenshot
-
-
+Our favourites feature can only be accesed by registered and logged in Users. This feature allows users to add or remove favourites and curate their own lists. Users are able to interact with this feature by clicking on the add/remove favourites button on the medium show page.
+The user's favourites can be accessed via the navbar. Here the user can click on any of the three buttons titled Film, Art and music, to see the the list they have curated for each category.
 
 ## Challenges
 * The biggest challenges were as follows:
