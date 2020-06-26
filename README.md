@@ -323,6 +323,77 @@ async getData() { //* this function can be called whenever you need to update th
 ```
 Now the getData function is called as soon as the page loads and displays the information straight away.
 
+```javascript
+    //! FINDING USER IDS IN MEDIUM.REVIEWS AND SETTING THEM TO STATE WITH reviewUserIds: reviewOwner
+    oneReviewOnly = async () => {
+      try {
+        const reviewOwner = this.state.medium.reviews.map(review => {
+          return review.owner.id
+        })
+        this.setState({ reviewUserIds: reviewOwner }) //* setting state to result of above map function
+      } catch (error) {
+        console.log(error)
+      }
+      this.hasUserPostedReview() 
+    }
+```
+Here I am mapping through reviews to find the the owner of the review. 
+
+```javascript
+    //! HAS THE USER ALREADY POSTED A REVIEW
+    //* can use this function as a "checker function" to see if it's true or false before the return in the render. Determining whether or not to render the code. Conditional rendering
+    hasUserPostedReview = () => {
+      const currentUser = getPayload().sub
+      return this.state.reviewUserIds.some(reviwUserId => reviwUserId === currentUser) //* single version of array I'm looping through. Seeing if reviewUserId is === to currentUser. Should return true if the currentUser has left a review already
+    }
+```
+In this hasUserPostedReview function I am checking to see if the user logged in matches the id of the owner of the review.
+
+In the return I have wrapped the reviews and ratings with a ternary. Now a user can only leave a review and rating if they are logged in. They may also only leave one review per medium.
+
+```javascript
+ return (
+      <>
+        <div className="media-content">
+          
+          {!this.hasUserPostedReview() && isAuthenticated() ? <form onSubmit={this.reviewHandleSubmit}>
+            <div className="field">
+              <p className="control">
+                <textarea
+                  className="textarea"
+                  placeholder="Enter Your Review Here"
+                  name="content"
+                  onChange={this.reviewHandleChange}
+                  value={content}
+                />
+              </p>
+            </div>
+            <div className="field">
+              <p className="control reviews-p-button-wrap">
+                <button type="submit" className="button post-review-button">Post Review</button>
+              </p>
+              <br />
+            </div>
+          </form> : null}
+          
+          
+          {this.state.errorMessage ? <div style={{ color: 'red' }}>{this.state.errorMessage}</div> : null }
+          {!this.hasUserPostedReview() && isAuthenticated() ? 
+            <Ratings
+              rating={rating}
+              widgetDimensions="40px"
+              widgetRatedColors="gold"
+              changeRating={this.changeRating}
+            >
+              <Ratings.Widget widgetHoverColor="gold"/>
+              <Ratings.Widget widgetHoverColor="gold"/>
+              <Ratings.Widget widgetHoverColor="gold"/>
+              <Ratings.Widget widgetHoverColor="gold"/>
+              <Ratings.Widget widgetHoverColor="gold"/>
+            </Ratings> : null
+          } 
+```
+
 ![fam show review no rating no post allowed](show-review-no-rating.png )
 
 ```javascript
@@ -353,7 +424,7 @@ Now the getData function is called as soon as the page loads and displays the in
 
 ### Ratings
 
-For the ratings I used the following plug-in: 
+For the ratings I used the following plug-in and followed the documenation provided: 
 ```javascript
    "react-ratings-declarative": "^3.4.1"
 ```
