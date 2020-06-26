@@ -259,6 +259,25 @@ Anyone can view the reviews even if not logged in. But they can not make a post.
 Wrapped in authentication ternary in render.
 ![fam show review](show-reviews.png )
 
+in the medium model serializers.py -> 
+```python
+from reviews.serializers import PopulatedReviewSerializer
+...
+class PopulatedMediumSerializer(MediumSerializer): #* Read serializer, used when you want to send populated data 
+#! Singular = One to Many
+#! Plural = Many to Many
+    genres = GenreSerializer(many=True)
+    category = CategorySerializer()
+    reviews = PopulatedReviewSerializer(many=True) #* using populated review to get the user in
+```
+
+in reviews model serializers.py 
+
+```python
+class PopulatedReviewSerializer(ReviewSerializer):
+    owner = UserSerializer()
+```
+
 ### Register
 ![fam register](fam-register.png )
 Users can be redirected to sign in if they already have an account.
