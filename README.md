@@ -233,6 +233,25 @@ In contrast to our wireframe I found that it was only really necessary for us to
 
 ### Reviews  
 
+```python 
+class Review(models.Model):
+    content = models.TextField(max_length=300)
+    #! RATING
+    #* small number that must be positive. Minium number of 1, max of 5. Any number in between.
+    rating = models.PositiveSmallIntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)])
+    owner = models.ForeignKey(
+        'jwt_auth.User',
+        related_name='reviews', 
+        on_delete=models.CASCADE
+        )
+    medium = models.ForeignKey(
+        'mediums.Medium',
+        related_name='reviews',
+        on_delete=models.CASCADE
+        )
+```
+I added rating to the review model as I knew that we would only want a user to be able to post a review if they also added a rating to their review.
+
 In reviews model serializers.py I am using the PopulatedReviewSerializer to attach the user to reviews. This way the username can later be accessed and displayed in the frontend and authentication can be applied so only the owner of the review can delete their review.
 
 ```python
