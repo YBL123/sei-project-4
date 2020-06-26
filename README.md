@@ -207,8 +207,34 @@ Each image in the index is wrapped with a link
 
 ![fam show](fam-show.png )
 
-- actually ended up only using one "medium" 
-//component for all 3 unlike the wireframe.
+In contrast to our wireframe I found that it was only really necessary for us to have one show component. In that component I just added all the possibilities that a 'medium' can have. The show page only displays the attributes that are contained on the medium that was clicked on in the index page.
+
+```javascript
+              <img className="medium-show-image" src={medium.image} alt={medium.title} />
+            </div>
+            <div className="medium-show-text">
+              <div>
+                <h1 className="medium-show-medium-title">{medium.title}</h1>
+                {mediumToMap
+                  ? mediumToMap.map((
+                    mediumGenre //* like this.state. using mediumToMap from state
+                  ) => (
+                    <h1 className="medium-show-medium-genre" key={mediumGenre.id}>{mediumGenre.name}</h1> //* this the genre
+                  ))
+                  : null}
+
+                <h1 className="medium-show-medium-creator">{medium.creator}</h1>
+                <h1 className="medium-show-medium-duration">{medium.duration}</h1>
+                <h1 className="medium-show-medium-date">
+                  {medium.start_date} {medium.end_date}
+                </h1>
+                <h1 className="medium-show-medium-art-gallery-location">{medium.art_gallery_location}</h1>
+                <h1 className="medium-show-medium-art-gallery">{medium.art_gallery}</h1>
+                <h2 className="medium-show-medium-year">{medium.year}</h2> 
+                <h1 className="medium-show-medium-price">{medium.price}</h1>
+                <p className="medium-show-medium-info">{medium.info}</p>
+```
+
 // can be seen by all but can only interact if logged in
 
 // talk about reviews and ratings here
