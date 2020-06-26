@@ -279,6 +279,16 @@ Only a user that is logged in can post reviews. They must add a rating to post a
 Anyone can view the reviews even if not logged in. But they can not make a post. 
 Wrapped in authentication ternary in render.
 
+```javascript
+{isAuthenticated() && (
+...
+          <div className="medium-show-row">
+            <Reviews mediumId={medium.id} />
+          </div>
+        </div>
+      )}
+```
+
 ![fam show review no rating no post allowed](show-review-no-rating.png )
 
 ```javascript
