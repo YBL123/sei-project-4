@@ -122,14 +122,10 @@ You are free to work alone or in a group. Both ways have their pros and cons. Re
 
 ![erd model](erd.png )
 
-//  talk about relationships and building the backend briefly
+We began this project by building the above ERD model. It was super beneficial for us to really understand the realtionships between our models and the attributes that each model would need to have. We would often refer back to this model whilst working through the backend.
 
-//  inset code snippets
-
-// reviews + rating as an example + how teh user was populated to make sure the username could be accessed for reviews
-
-// insert screenshot of all insomnia requests
 ![insomnia](insomnia.png )
+We used insomnia to test out all of our requests. These are all the requests we built for this project.
 
 ### Wireframe
 
@@ -258,6 +254,8 @@ only a user that is logged in can post reviews. They must add a rating to post a
 Anyone can view the reviews even if not logged in. But they can not make a post. 
 Wrapped in authentication ternary in render.
 ![fam show review](show-reviews.png )
+
+// reviews + rating as an example + how teh user was populated to make sure the username could be accessed for reviews
 
 in the medium model serializers.py -> 
 ```python
