@@ -235,7 +235,17 @@ In contrast to our wireframe I found that it was only really necessary for us to
 
 // reviews + rating as an example + how the user was populated to make sure the username could be accessed for reviews
 
+in reviews model serializers.py 
+
+```python
+class PopulatedReviewSerializer(ReviewSerializer):
+    owner = UserSerializer()
+```
+
 in the medium model serializers.py -> 
+
+reviews have a many to many relationship to the medium model. 
+
 ```python
 from reviews.serializers import PopulatedReviewSerializer
 ...
@@ -245,13 +255,6 @@ class PopulatedMediumSerializer(MediumSerializer): #* Read serializer, used when
     genres = GenreSerializer(many=True)
     category = CategorySerializer()
     reviews = PopulatedReviewSerializer(many=True) #* using populated review to get the user in
-```
-
-in reviews model serializers.py 
-
-```python
-class PopulatedReviewSerializer(ReviewSerializer):
-    owner = UserSerializer()
 ```
 
 ![fam show review](show-reviews.png )
