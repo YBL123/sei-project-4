@@ -159,7 +159,7 @@ function Home() {
   ```
 ![fam home](fam-home.png )
 
-To begin, what we are doing here is renaming data: with post. Now we don't need to use this.state. Everything is on post.
+What we are doing here is renaming data: with post. Now we don't need to use this.state. Everything is on post.
 
 Knowing that post is an array, inside of the useEffect we are making the result ternary, using the variable to specify. The variable 'max' is only created with post length if post exists. (- 1 because length is not the same as the index number).
 
@@ -443,8 +443,7 @@ Our favourites feature can only be accesed by registered and logged in Users. Th
 The user's favourites can be accessed via the navbar. Here the user can click on any of the three buttons titled Film, Art and music, to see the the list they have curated for each category.
 
 ## Challenges
-* The biggest challenges were as follows:
-* Planning and building the relationships in the backend using Python and Django. 
+* Planning and understanding the relationships between our models
 * Working with serializers and populated serializers 
 * Working in a new language we had just learnt - Python
 * Working with Hooks
@@ -453,15 +452,17 @@ The user's favourites can be accessed via the navbar. Here the user can click on
  
 ## Wins
 * The greatest win for this project was how well we worked together as a team
-* meeting all of our deadlines and completing all of our 'must haves'
+* Meeting all of our deadlines and completing all of our 'must haves'
 * Working with Hooks
-* Working with python
-* Making the app responsive in it’s design
+* Working with Django and Python - really enjoyed exporing them and workign with them for the first time.
+* Making the app responsive (for some screen sizes)
+* Happy with the minimal design. Especially pleased with my design for the favourites page and the side navbar I created
 
 
 ## Future Improvements
 * More filter options and being able to filter in favourites/profile page too. Being able to filter by year, month.
 * Calendar feature for the art exhibitions - so that a user can add exhibitions to their personal calendar that they can check on and get alerts.
-* Have actual media, i.e film and songs for those two components. Netflix, Spotify merge.
-* have update review in views.py for the review model but didn't have time to implement it in the frontend.
+* Having actual media, i.e film and songs for those two components. 
+* Being able to edit reviews - I have update review in views.py for the review model but didn't have time to implement it in the frontend.
+* Making the app responsive for more screen sizes.
 
