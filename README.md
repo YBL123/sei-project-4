@@ -321,7 +321,7 @@ async getData() { //* this function can be called whenever you need to update th
     this.getData() //* calling the getData function as soon as the page loads to display the info straight away
   }
 ```
-Now the getData function is called as soon as the page loads and displays the info straight away.
+Now the getData function is called as soon as the page loads and displays the information straight away.
 
 ![fam show review no rating no post allowed](show-review-no-rating.png )
 
