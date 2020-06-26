@@ -313,4 +313,5 @@ can be seen only after a user registers and logs in.
 * More filter options and being able to filter in favourites/profile page too. Being able to filter by year, month.
 * Calendar feature for the art exhibitions - so that a user can add exhibitions to their personal calendar that they can check on and get alerts.
 * Have actual media, i.e film and songs for those two components. Netflix, Spotify merge.
+* have update review in views.py for the review model but didn't have time to implement it in the frontend.
 
