@@ -233,18 +233,16 @@ In contrast to our wireframe I found that it was only really necessary for us to
 
 ### Reviews  
 
-// reviews + rating as an example + how the user was populated to make sure the username could be accessed for reviews
-
-in reviews model serializers.py 
+In reviews model serializers.py I am using the PopulatedReviewSerializer to attach the user to reviews. This way the username can later be accessed and displayed in the frontend and authentication can be applied so only the owner of the review can delete their review.
 
 ```python
 class PopulatedReviewSerializer(ReviewSerializer):
     owner = UserSerializer()
 ```
 
-in the medium model serializers.py -> 
+In the medium model serializers.py;
 
-reviews have a many to many relationship to the medium model. 
+The reviews have a many to many relationship to the medium model. I added them to the PopulatedMediumSerializer as they live on the medium. By attaching the populated review the user will now also be accessible via the medium. 
 
 ```python
 from reviews.serializers import PopulatedReviewSerializer
