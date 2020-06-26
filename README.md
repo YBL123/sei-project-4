@@ -231,10 +231,7 @@ In contrast to our wireframe I found that it was only really necessary for us to
                 <p className="medium-show-medium-info">{medium.info}</p>
 ```
 
-// can be seen by all but can only interact if logged in
-
-// talk about reviews and ratings here
-// add screenshots and code snippets
+The reviews are displayed for everyone. But the ability to post a review is only available once a user registers and logs in. Each user is also only able to leave one review per medium.
 
 ```javascript
               {isAuthenticated() && (
@@ -247,6 +244,7 @@ In contrast to our wireframe I found that it was only really necessary for us to
 ```
 
 ### Ratings --> plug-in
+For the ratings I used the following plug-in: 
 ![fam show review no rating no post allowed](show-review-no-rating.png )
 
 ```javascript
