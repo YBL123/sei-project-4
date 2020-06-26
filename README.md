@@ -159,16 +159,16 @@ function Home() {
   ```
 ![fam home](fam-home.png )
 
-What we are doing here is renaming data: with post. Now we don't need to use this.state. Everything is on post.
+What we did here is renamed data: with post. Now we don't need to use this.state. Everything is on post.
 
 Knowing that post is an array, inside of the useEffect we are making the result ternary, using the variable to specify. The variable 'max' is only created with post length if post exists. (- 1 because length is not the same as the index number).
 
 ```javascript
 setRecentPost(recentPost) 
 ```
-sets post with the index that has the greatest value to the state. Now it can also be reused using recentPost.
+Sets post with the index that has the greatest value to the state. Now it can also be reused using recentPost.
 
-We pass the post variable as an argument inside the dependency array. Now every time post changes, it will trigger this function to run.
+We passed the post variable as an argument inside the dependency array. Now every time post changes, it will trigger this function to run.
 Now we can access and display the most recent post. 
 As seen below, the link is wrapped around each category image. Once clicked the user is taken to the appropriate index page.
 
@@ -252,7 +252,7 @@ class Review(models.Model):
 ```
 I added rating to the review model as I knew that we would only want a user to be able to post a review if they also added a rating to their review.
 
-In reviews model serializers.py I am using the PopulatedReviewSerializer to attach the user to reviews. This way the username can later be accessed and displayed in the frontend and authentication can be applied so only the owner of the review can delete their review.
+In the reviews model serializers.py I am using the PopulatedReviewSerializer to attach the user to reviews. This way the username can later be accessed and displayed in the frontend and authentication can be applied so only the owner of the review can delete their review.
 
 ```python
 class PopulatedReviewSerializer(ReviewSerializer):
@@ -275,7 +275,7 @@ class PopulatedMediumSerializer(MediumSerializer): #* Read serializer, used when
 ```
 
 ![fam show review](show-reviews.png )
-I made the reviews an independent component so that it could be reused should we want to option to leave reviews anywhere else on the app.
+I made the reviews an independent component so that it could be reused should we want the option to add reviews anywhere else on the app.
 
 Only a user that is logged in can post reviews. They must add a rating to post a review. A red message will appear informing the user of so if they try to post a review without a rating. 
 The reviews are wrapped in a ternary. Anyone can view the reviews even if not logged in. But they can not make a post - and the option to do so will not appear unless a user is logged in. 
@@ -337,7 +337,7 @@ Now the getData function is called as soon as the page loads and displays the in
       this.hasUserPostedReview() 
     }
 ```
-Here I am mapping through reviews to find the the owner of the review. 
+Here I mapped through reviews to find the the owner of the review. 
 
 ```javascript
     //! HAS THE USER ALREADY POSTED A REVIEW
@@ -446,23 +446,23 @@ The user's favourites can be accessed via the navbar. Here the user can click on
 * Planning and understanding the relationships between our models
 * Working with serializers and populated serializers 
 * Working in a new language we had just learnt - Python
-* Working with Hooks
-* Writing the logic for reviews and ratings.
+* Working with Hooks for the firs time
+* Writing the logic for reviews and ratings
 * Working with a lot of nested data on our models
  
 ## Wins
 * The greatest win for this project was how well we worked together as a team
 * Meeting all of our deadlines and completing all of our 'must haves'
 * Working with Hooks
-* Working with Django and Python - really enjoyed exporing them and workign with them for the first time.
-* Making the app responsive (for some screen sizes)
+* Working with Django and Python - really enjoyed exploring and working with them for the first time.
+* Making the app responsive (iPhone X)
 * Happy with the minimal design. Especially pleased with my design for the favourites page and the side navbar I created
 
 
 ## Future Improvements
-* More filter options and being able to filter in favourites/profile page too. Being able to filter by year, month.
+* More filter options and being able to filter in favourites/profile page too. Being able to filter by year and month, genre.
 * Calendar feature for the art exhibitions - so that a user can add exhibitions to their personal calendar that they can check on and get alerts.
 * Having actual media, i.e film and songs for those two components. 
-* Being able to edit reviews - I have update review in views.py for the review model but didn't have time to implement it in the frontend.
+* Being able to edit reviews - I have update review in views.py for the reviews model but didn't have time to implement it in the frontend.
 * Making the app responsive for more screen sizes.
 
