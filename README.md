@@ -214,6 +214,16 @@ Each image in the index is wrapped with a link
 // talk about reviews and ratings here
 // add screenshots and code snippets
 
+```javascript
+              {isAuthenticated() && (
+...
+          <div className="medium-show-row">
+            <Reviews mediumId={medium.id} />
+          </div>
+        </div>
+      )}
+```
+
 ### Ratings --> plug-in
 ![fam show review no rating no post allowed](show-review-no-rating.png )
 
