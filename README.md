@@ -290,6 +290,39 @@ The reviews are wrapped in a ternary. Anyone can view the reviews even if not lo
       )}
 ```
 
+In the reviews component:
+```javascript
+class Reviews extends React.Component {
+  state = {
+...
+    reviewsStatus: true,
+```
+Setting state with reviewsStatus.
+
+```javascript
+async getData() { //* this function can be called whenever you need to update the info on the page
+    try {
+      const mediumId = this.props.mediumId
+      const res = await getSingleMedium(mediumId)
+      this.setState({ medium: res.data })
+
+      //* checking if there's a medium in state, if so triggering oneReviewOnly
+      if (this.state.medium) {
+        return this.oneReviewOnly()
+      } else {
+        return
+      }
+
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  componentDidMount() {
+    this.getData() //* calling the getData function as soon as the page loads to display the info straight away
+  }
+```
+Now the getData function is called as soon as the page loads and displays the info straight away.
+
 ![fam show review no rating no post allowed](show-review-no-rating.png )
 
 ```javascript
