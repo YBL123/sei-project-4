@@ -262,6 +262,32 @@ Wrapped in authentication ternary in render.
 
 ![fam show review no rating no post allowed](show-review-no-rating.png )
 
+```javascript
+  //! Reviews
+  reviewHandleChange = event => {
+    const content = event.target.value //* saving what the user types into the Review box
+    this.setState({ content }) //* setting state with their review
+  }
+
+  reviewHandleSubmit = async event => {
+    event.preventDefault()
+    const mediumId = this.props.mediumId
+    if (this.state.rating === 0 || this.state.rating > 5) {
+      this.setState({ errorMessage: 'Please Add A Rating To Your Review' }) //* if user tried to post a review without adding a rating
+      return
+    }
+    try {
+      this.setState({ errorMessage: null }) //* if user has added a rating to review or there was an error message before then we can set the error message back to null
+      await createReview({ content: this.state.content, rating: this.state.rating, medium: mediumId }, mediumId) //* the add review function requires a text field so you can pass it through like so - also it needs to match the order that you're using the arguments in your api.js file
+      this.setState({ content: '', rating: 0 }) //* setting the review box back to empty
+      this.getData() //* calling this getData function again to reload the page with the new database info and display your new review straight away!
+    } catch (err) {
+      console.log(err.response.data)
+    }
+
+  }
+```
+
 ### Ratings
 
 For the ratings I used the following plug-in: 
