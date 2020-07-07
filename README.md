@@ -466,3 +466,7 @@ The user's favourites can be accessed via the navbar. Here the user can click on
 * Being able to edit reviews - I have update review in views.py for the reviews model but didn't have time to implement it in the frontend.
 * Making the app responsive for more screen sizes.
 
+## Key Learnings
+This was my final project. It was really rewarding to see how far I had come and what I was now able to build and accomplish. It was really exciting to be able to pick up another language (Python), and being able to work with Django for the backend. It was challenging at times but I really enjoyed both. It made me think about the different use cases and the advantages and disadvantages of using PostgreSQL as opposed to NoSQL. Experimenting with using hooks was also an enjoyable challenge. 
+This project cemented my abilitiy to prioritise must have feautures and meeting deadlines and the importance of thorough and well-thought out planning. It also reinforced the importance of communication, which leads to great collaboration. 
+
